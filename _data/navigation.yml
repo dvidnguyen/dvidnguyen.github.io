@@ -1,5 +1,8 @@
 # Links in the site header (order = display order)
 main:
+  - title: "Experience"
+    url: /#experience
+
   - title: "Publications"
     url: /publications/
 

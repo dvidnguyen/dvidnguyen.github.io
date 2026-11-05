@@ -225,9 +225,16 @@
       }
     }
 
+    // Theme toggle pinned to the far right of the header
     #theme-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+
       a {
         width: 25px;
+        margin: 0;
         display: flex;
         justify-content: center;
         cursor: pointer;
@@ -258,6 +265,11 @@
                 transform: scaleX(1); /* reveal*/
       }
     }
+  }
+
+  // keep the toggle clear of the hamburger button when links collapse
+  button:not(.hidden) ~ .visible-links #theme-toggle {
+    right: 2.5rem;
   }
 
   .hidden-links {
